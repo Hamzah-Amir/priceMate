@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Amazon UK Live Cards – Options</title>
+	<link rel="stylesheet" href="options.css" />
+</head>
+<body>
+	<div class="wrap">
+		<h1>Backend Settings</h1>
+		<label>
+			<span>Base URL</span>
+			<input id="baseUrl" type="url" placeholder="https://api.example.com" />
+		</label>
+		<label>
+			<span>API Key</span>
+			<input id="apiKey" type="text" placeholder="Optional Bearer token" />
+		</label>
+		<label>
+			<span>Refresh (ms)</span>
+			<input id="refreshMs" type="number" min="60000" step="1000" />
+		</label>
+		<div class="actions">
+			<button id="save">Save</button>
+			<span id="status" class="status"></span>
+		</div>
+	</div>
+	<script src="../scripts/storage.js"></script>
+	<script src="options.js"></script>
+</body>
+</html>
+
+

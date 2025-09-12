@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "PriceMate",
+  "description": "Injects compact cards showing ASIN, rank, fulfillment split, stock, brand, and details link on amazon.co.uk with live backend data.",
+  "version": "1.0.0",
+
+  "options_page": "options/options.html",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "https://www.amazon.co.uk/*",
+    "https://amazon.co.uk/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.co.uk/*",
+        "https://amazon.co.uk/*"
+      ],
+      "js": ["scripts/storage.js", "scripts/services.js", "scripts/content.js"],
+      "css": ["styles/content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Amazon UK Live Cards"
+  }
+}
+
+
