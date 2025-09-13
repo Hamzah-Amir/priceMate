@@ -18,9 +18,9 @@
 	margin: 2px 0;
 }
 
-.amuk-top { justify-content: space-between; }
+/* .amuk-top { justify-content: space-between; } */
 
-.amuk-label { color: #565959; width: 88px; flex: 0 0 88px; }
+.amuk-label { color: black; width: 88px; flex: 0 0 88px; font-weight: bold; font-size: 14px; }
 .amuk-value { font-weight: 600; }
 .amuk-link { color: #007185; text-decoration: none; }
 .amuk-link:hover { text-decoration: underline; }
@@ -34,5 +34,29 @@
 }
 .amuk-copy svg { width: 14px; height: 14px; fill: currentColor; }
 .amuk-copy:hover { color: #007185; }
+
+/* Fulfillment label colors */
+.amuk-fulfillment {
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-weight: 600;
+	font-size: 11px;
+}
+
+.amuk-prime,
+.amuk-fbm {
+	background-color: #e6f3ff; /* Light sky blue */
+	color: #0066cc;
+}
+
+.amuk-amz {
+	background-color: #fff8e1; /* Light yellow */
+	color: #f57c00;
+}
+
+.amuk-fba {
+	background-color: #ffebee; /* Light red background */
+	color: #d32f2f; /* Red text */
+}
 
 
