@@ -59,4 +59,55 @@
 	color: #d32f2f; /* Red text */
 }
 
+/* Variation grouping styles */
+.amuk-variations {
+	margin-top: 8px;
+	padding-top: 8px;
+	border-top: 1px solid #e3e6e6;
+}
+
+.amuk-variations-header {
+	margin-bottom: 6px;
+}
+
+.amuk-variations-list {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.amuk-variation {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 4px 6px;
+	background-color: #f8f9fa;
+	border: 1px solid #e3e6e6;
+	border-radius: 4px;
+	font-size: 11px;
+}
+
+.amuk-variation-asin {
+	font-weight: 600;
+	color: #0f1111;
+	min-width: 80px;
+}
+
+.amuk-variation-desc {
+	flex: 1;
+	color: #565959;
+	font-style: italic;
+}
+
+.amuk-variation-link {
+	color: #007185;
+	text-decoration: none;
+	font-size: 10px;
+	font-weight: 600;
+}
+
+.amuk-variation-link:hover {
+	text-decoration: underline;
+}
+
 
